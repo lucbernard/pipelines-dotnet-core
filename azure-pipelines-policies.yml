@@ -9,9 +9,9 @@ pr:
   branches:
     include:
     - develop
-  paths:
-    include:
-    - Views/**
+#  paths:
+#    include:
+#    - Views/**
 
 pool:
   name: eShopOnWebSelfPool
