@@ -7,10 +7,10 @@ trigger: none
 pr:
   branches:
     include:
-      - develop
+    - develop
   paths:
     include:
-      - Models/**
+    - Models/**
 
 pool:
   name: eShopOnWebSelfPool
