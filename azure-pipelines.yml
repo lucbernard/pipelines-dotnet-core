@@ -14,9 +14,9 @@ resources:
 - repo: self
 
 pool:
-  #vmImage: ubuntu-latest
-  name: eShopOnWebSelfPool
-  demands: Agent.Name -equals eShopOnWebSelfAgent
+  vmImage: ubuntu-latest
+  #name: eShopOnWebSelfPool
+  #demands: Agent.Name -equals eShopOnWebSelfAgent
 
 variables:
   buildConfiguration: 'Release'
