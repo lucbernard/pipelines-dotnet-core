@@ -3,8 +3,14 @@
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
-trigger: none # trigger via branch policies
-pr: none
+trigger: none
+pr:
+  branches:
+    include:
+      - develop
+  paths:
+    include:
+      - Models/**
 
 pool:
   name: eShopOnWebSelfPool
