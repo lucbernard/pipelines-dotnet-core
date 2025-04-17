@@ -14,6 +14,8 @@ trigger:
     include:
     - v*
 
+pr: none
+
 pool:
   name: eShopOnWebSelfPool
   demands: Agent.Name -equals eShopOnWebSelfAgent
