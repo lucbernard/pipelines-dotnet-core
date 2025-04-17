@@ -7,10 +7,10 @@ trigger: none # trigger via branch policies
 pr:
   branches:
     include:
-      - develop
+    - develop
   paths:
     include:
-      - Views/**
+    - Views/**
 
 pool:
   name: eShopOnWebSelfPool
