@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  #vmImage: ubuntu-latest
+  name: eShopOnWebSelfPool
+  demands: Agent.Name -equals eShopOnWebSelfAgent
 
 variables:
   buildConfiguration: 'Release'
