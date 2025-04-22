@@ -14,8 +14,9 @@ pr:
     - Models/**
 
 pool:
-  name: eShopOnWebSelfPool
-  demands: Agent.Name -equals eShopOnWebSelfAgent
+  vmImage: ubuntu-latest
+  #name: eShopOnWebSelfPool
+  #demands: Agent.Name -equals eShopOnWebSelfAgent
 
 variables:
   buildConfiguration: 'Release'
