@@ -17,8 +17,9 @@ trigger:
 pr: none
 
 pool:
-  name: eShopOnWebSelfPool
-  demands: Agent.Name -equals eShopOnWebSelfAgent
+  #name: eShopOnWebSelfPool
+  #demands: Agent.Name -equals eShopOnWebSelfAgent
+  vmImage: ubuntu-latest
 
 variables:
   buildConfiguration: 'Release'
