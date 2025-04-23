@@ -1,0 +1,26 @@
+trigger:
+  branches:
+    include:
+    - master
+pr: none
+
+resources:
+  repositories:
+  - repository: self
+
+variables:
+- name: buildConfiguration
+  value: 'Release'
+
+stages:
+- stage: __default
+  jobs:
+  - job: Job
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    - task: CmdLine@2
+      displayName: 'dotnet build $(buildConfiguration)'
+      inputs:
+        script: dotnet build --configuration $(buildConfiguration)
+
